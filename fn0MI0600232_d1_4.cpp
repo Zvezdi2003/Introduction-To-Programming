@@ -65,7 +65,7 @@ bool isRemarkable(long long number)
 int main()
 {
 	long long number;
-	
+
 
 	cout << "Enter a positive integer: ";
 	cin >> number;
@@ -80,15 +80,15 @@ int main()
 	int temp1 = number;
 	int temp2 = number;
 
-	while (!isPrime(temp1) || !isRemarkable(temp1))
+	while (!isPrime(temp1) || isRemarkable(temp1))
 	{
 		temp1++;
 	}
-	while (!isPrime(temp2) || !isRemarkable(temp2))
+	while (!isPrime(temp2) || isRemarkable(temp2))
 	{
 		temp2--;
 	}
-	if (temp1 - number < temp2 - number)
+	if (temp1 - number < number - temp2)
 	{
 		cout << temp1;
 	}
@@ -97,5 +97,9 @@ int main()
 		cout << temp2;
 	}
 }
+
+
+
+
 
 
