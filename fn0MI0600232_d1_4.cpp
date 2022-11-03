@@ -72,7 +72,7 @@ int main()
 
 	if (number < 1 || number > 1000000000)
 	{
-		cout << "Invalid input!" << "\n";
+		cout << "Incorrect input!" << "\n";
 	}
 
 	isPrime(number);
